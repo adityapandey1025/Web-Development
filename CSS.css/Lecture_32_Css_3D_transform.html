@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS 3D Transform</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .container {
+      min-height: 100vh;
+      background-color: gray;
+      padding: 3rem 5rem;
+      display: flex;
+      gap: 1rem;
+      perspective: 800px; /* ✅ Added */
+      transform-style: preserve-3d; /* ✅ Optional but helps */
+      flex-wrap: wrap; /* So that items don’t overflow */
+    }
+
+    .item {
+      background-color: aqua;
+      padding: 2rem; /* ✅ Fixed */
+      height: 150px;
+      width: 350px;
+      border: solid black;
+      transition: transform 0.5s ease;
+    }
+
+    .RotateX:hover {
+      transform: rotateX(45deg);
+    }
+
+    .RotateY:hover {
+      transform: rotateY(45deg);
+    }
+
+    .RotateZ:hover {
+      transform: rotateZ(45deg);
+    }
+
+    .TranslateX:hover {
+      transform: translateX(45px);
+    }
+
+    .TranslateY:hover {
+      transform: translateY(45px);
+    }
+
+    .TranslateZ:hover {
+      transform: translateZ(45px);
+    }
+
+    .ScaleX:hover {
+      transform: scaleX(2);
+    }
+
+    .ScaleY:hover {
+      transform: scaleY(2);
+    }
+
+    .ScaleZ:hover {
+      transform: scaleZ(2); /* ✅ Just scaleZ now */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item RotateX">RotateX</div>
+    <div class="item RotateY">RotateY</div>
+    <div class="item RotateZ">RotateZ</div>
+    <div class="item TranslateX">TranslateX</div>
+    <div class="item TranslateY">TranslateY</div>
+    <div class="item TranslateZ">TranslateZ</div>
+    <div class="item ScaleX">ScaleX</div>
+    <div class="item ScaleY">ScaleY</div>
+    <div class="item ScaleZ">ScaleZ</div>
+  </div>
+</body>
+</html>

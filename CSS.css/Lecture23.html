@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing:border-box;
+            
+        }
+        .container{
+            background-color: beige;
+            border: 3px solid black;
+            margin: 5px;
+            height: 106.6vh;
+            width: 100vw;
+
+        }
+        .box{
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 0px;
+            height: 90px;
+            width: 200px;
+            animation-name: right-movement;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            animation-timing-function:ease;
+            animation-fill-mode:backwards;
+
+        }
+        @keyframes right-movement {
+            from{
+                left:0;
+                top:0;
+            }
+            to{
+                top: 0px;;
+                left:1300px;
+            }
+        }
+
+        .box2{
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 5px;
+            height: 90px;
+            width: 200px;
+            animation-name: Left-movement;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            
+                
+            animation-timing-function:ease;
+            animation-fill-mode: both;
+
+        }
+        @keyframes Left-movement {
+            from{
+                
+                top: 550px;;
+                left:1300px;
+            }
+            to{
+                left:0;
+                top:550px;
+            }
+        }
+        .circle{
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 5px;
+            height: 90px;
+
+            width: 90px;
+            border-radius: 102px;
+            animation-name: circle-movement;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            top: 300px;
+                
+            animation-timing-function:ease;
+            animation-fill-mode: both;
+
+        }
+        @keyframes circle-movement {
+           0%{
+            top: 550px;
+                left:1300px;
+           }
+           25%{
+            
+            top: 0px;
+            left: 600px;
+           }
+           
+           75%{
+            top: 550px;
+            left: 100px; 
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="circle">
+
+        </div>
+        <div class="box2">
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: black;
+            border: 3px solid blue;
+            margin: 3px;
+            padding: 3px;
+            height: 100vh;
+            
+        }
+        .column1{
+            background-color: red;
+            border: blue 2px solid;
+            margin: 10px;
+            width: 30%;
+            height: 300px;
+            
+        }
+        .column2{
+            background-color: green;
+            border: blue 2px solid;
+            margin: 10px;
+            width: 30%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .text1{
+            border: 3px solid black;
+            margin: 10px;
+            height: 40%;
+            width: 50%;
+            background-color: pink;
+            align-self: center;
+        }
+        .text2{
+            border: 3px solid black;
+            margin: 10px;
+            height: 40%;
+            width: 50%;
+            background-color: rgb(231, 234, 35);
+            align-self: center;
+            
+            
+        }
+        img{
+            border: 3px solid black;
+            margin: 10px;
+            
+            background-color: rgb(231, 234, 35);
+           width: 80%;
+           height: 80%;
+            
+            flex-shrink: 1;
+            
+        }
+        @media (min-width:700px){
+            .container{
+                display: flex;
+            flex-direction: row;
+            
+            }
+            .column1{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media(min-width:0px) and(max-width:700px){
+            .container{
+                display: flex;
+            flex-direction: column;
+            
+            }
+            .column1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="text1">Text A</div>
+            <div class="text2">Text B</div>
+            
+        </div>
+        <div class="column2">
+            <img src="OIP7.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("Nikal pehli fursat me nikal!!")

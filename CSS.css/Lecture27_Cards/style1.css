@@ -1,0 +1,91 @@
+*{
+    glyph-orientation-horizontal: unset;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.large_container{
+    background-color:rgba(76, 149, 149, 0.737);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 500px;
+    background-color: whitesmoke;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    align-items: center;
+}
+img{
+    height: 150px;
+    width: 100%;
+}
+h3{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+p{
+    margin: 35px;
+    position: relative;
+    top: 10px;
+    font-weight:400;
+}
+.box2{
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgba(76, 149, 149, 0.737);
+    display: flex;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    
+    
+}
+#img2{
+    position: relative;
+    top: 10px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+}
+#para{
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+a{
+    position: relative;
+    top: 10px;
+    left: 90px;
+    font-size: larger;
+}
+
+.last a{
+    position: relative;
+    left: 50px;
+    font-size: medium;
+    color: white;
+}
+#yes{
+    position: relative;
+    top: 22px;
+}
+#button{
+    width:215%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    position: relative;
+    right: 69px;
+    top: 20px;
+    box-shadow:inset 3px 3px 4px 4px black;
+    color: white;
+}

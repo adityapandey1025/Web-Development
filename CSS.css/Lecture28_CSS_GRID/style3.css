@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.large_container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(47, 42, 42);
+    padding: 5rem;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.container{
+    background-color: rgb(230, 234, 238);
+}
+.a{
+    display: grid;
+    padding: 1rem;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+}
+.item{
+    background-color: rgb(14, 201, 201);
+}
+.b{
+    display: grid;
+    padding: 1rem;
+    gap: 0.5rem;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+.A{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.B{
+   grid-column-start: 3;
+   grid-row-start: 1;
+   grid-row-end: 3;
+}
+.c{
+    display: grid;
+    padding: 1rem;
+    gap: 0.5rem;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+.E{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.F{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.G{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.H{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.d{
+    display: grid;
+    padding: 1rem;
+    gap: 0.5rem;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+.ee{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}
+.ff{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gg{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-end: 2;
+}
+.hh{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.ii{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.e{
+    display: grid;
+    padding: 1rem;
+    gap: 0.5rem;
+    
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(6,1fr);
+}
+.itemx{
+    background-color: rgb(14, 201, 201);
+}
+@media (max-width: 700px) {
+  .large_container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container {
+    flex: 1 1 100%;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    margin-bottom: 2rem;
+  }
+}

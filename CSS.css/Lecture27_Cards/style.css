@@ -1,0 +1,53 @@
+*{
+    glyph-orientation-horizontal: unset;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.large_container{
+    background-color:rgba(76, 149, 149, 0.737);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 430px;
+    background-color: whitesmoke;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+img{
+    margin-top: 8%;
+    width: 90%;
+    height: 70%;
+    border-radius: 20px;
+    transition: all 3s 0s linear;
+}
+img:hover{
+    transform: scale(1.08);
+}
+p.one{
+    position: relative;
+    font-size: large;
+    font-weight: bolder;
+    left: 15px;
+    overflow:hidden;
+    
+    top: 10px;
+    
+}
+p.two{
+    position: relative;
+    font-size: small;
+    font-weight: bold;
+    left: 15px;
+    
+    
+    top: 25px;
+}

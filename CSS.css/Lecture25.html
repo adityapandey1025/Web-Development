@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 35px;
+            color: red;
+            font-weight: 800;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 1200px;
+            margin: 15px;
+            border: 5px solid black;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 600px;
+            height: 500px;
+            background-color: aqua;
+            border: 5px solid black;
+            margin-top: 10px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-property: all;
+            transition-delay: 0s;
+            transition-duration: 2s;
+            
+            
+        }
+        .box:hover{
+            transform:rotate(45deg);
+            transform: scale(3);
+            transform: skew(15deg);
+            transform: translate(500px,500px);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Hii This Is Aditya</p>
+        </div>
+    </div>
+</body>
+</html>
