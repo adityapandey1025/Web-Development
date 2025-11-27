@@ -11,3 +11,12 @@
 // let prnt=document.querySelector('#inside');
 // let chld=document.querySelector('span');
 // chld.remove(chld);
+console.log(window.innerHeight);
+console.log(window.innerWidth);
+console.log(window.location.href);
+console.log(window.navigator.userAgent);
+function opening_web(){
+    window.open("https://www.youtube.com/watch?v=uoII7VSDF3k&list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD&index=51");
+}
+let x=document.querySelectorAll(".para");
+x[1].style.backgroundColor="green";

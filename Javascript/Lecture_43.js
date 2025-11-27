@@ -52,7 +52,8 @@ arr.push("babbar","Aand forces");
 // });
 
 // let newArr=[3,5,9,2];
-// let ans=newArr.map((value)=>{
+// let ans=newArr.map
+// (value)=>{
 //     return value**2;
 // });
 // console.log(ans);
