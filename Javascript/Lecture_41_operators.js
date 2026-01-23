@@ -22,9 +22,9 @@
 
 // Ternary Operators
 
-// let z=(5>13)?"hello":5;
-// console.log(typeof(z))
-// console.log(z)
+let z=(5<13)?"hello":5;
+console.log(typeof(z))
+console.log(z)
 
 // let age=12;
 // let elegible=(age>18)?console.log("Elegible to vote"):console.log("Not elegible");
@@ -53,7 +53,7 @@
 
 let name = 1;
 
-if (name) {
+if ("") {
   console.log("Name is present");
 } else {
   console.log("Name is missing"); // Runs because "" is falsy
