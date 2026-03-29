@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload Simulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .upload-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    input[type="file"] {
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #4caf50;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background-color: #9e9e9e;
+      cursor: not-allowed;
+    }
+
+    .status {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #d62525;
+    }
+  </style>
+</head>
+<body>
+
+<div class="upload-container">
+  <h2>Upload File</h2>
+  <input type="file" id="fileInput">
+  <br>
+  <button id="uploadBtn">Upload</button>
+  <div class="status" id="status"></div>
+</div>
+
+
+<script>
+  let upload=document.getElementById('uploadBtn');
+  let fileInput=document.querySelector('#fileInput');
+  let status=document.querySelector('.status');
+  
+  function upload_file(file){
+    return new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+        if(file){
+          resolve(file.name)
+        }
+        else{
+          reject("Plz select file")
+        }
+      },3000)
+    })
+  }
+
+  upload.addEventListener('click',()=>{
+    upload.disabled=true;
+    status.innerText="Uploading..."
+    const file=fileInput.files[0];
+
+    upload_file(file)
+      .then((fileName)=>{
+        status.innerText="Uploaded "+fileName;
+      })
+      .catch((err)=>{
+        status.innerText='Failed! ' +err;
+      })
+      .finally(()=>{
+        upload.disabled=false;
+      })
+  })
+</script>
+
+<!-- <script>
+  function uploadFile(file) {
+    return new Promise((resolve, reject) => {
+      // simulate upload delay
+      setTimeout(() => {
+        if(file) {
+          resolve(file.name); // return file name
+        } else {
+          reject("No file selected");
+        }
+      }, 3000);
+    });
+  }
+
+  const uploadBtn = document.getElementById('uploadBtn');
+  const fileInput = document.getElementById('fileInput');
+  const statusDiv = document.getElementById('status');
+
+  uploadBtn.addEventListener('click', () => {
+    const file = fileInput.files[0];
+    statusDiv.textContent = "Uploading...";
+    uploadBtn.disabled = true;
+
+    uploadFile(file)
+      .then(fileName => {
+        statusDiv.textContent = "Uploaded: " + fileName;
+      })
+      .catch(err => {
+        statusDiv.textContent = "Upload failed: " + err;
+      })
+      .finally(() => {
+        uploadBtn.disabled = false;
+      });
+  });
+</script> -->
+
+</body>
+</html>

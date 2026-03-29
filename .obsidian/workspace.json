@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "df80af6dd01ec534",
+        "id": "f2d6e38eae3c80a0",
         "type": "tabs",
         "children": [
           {
-            "id": "c4fc8311e1ca1227",
+            "id": "af3d64becd346f0e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "Projects to be focus/Projects.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.12.7"
               },
-              "icon": "lucide-file",
-              "title": "Projects"
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
             }
           }
         ]
@@ -167,9 +165,22 @@
       "bases:Create new base": false
     }
   },
-  "active": "c4fc8311e1ca1227",
+  "active": "af3d64becd346f0e",
   "lastOpenFiles": [
+    "Javascript/Lecture_56_promise/Promise.md",
+    "Javascript/Lecture_56_promise/Callback Hell and Promise.md",
+    "Javascript/Lecture_57_async_await/Async-Await.md",
+    "Javascript/Lecture_55_eventLoop/Event Loop.md",
+    "Javascript/Lecture53_Events/Events.md",
     "Javascript/localStorage/Local Storage.md",
+    "Javascript/cookies/cookies.md",
+    "Javascript/cookies/image.png",
+    "Javascript/Lecture_57_async_await/fetch.md",
+    "Javascript/Lecture_56_promise/code.html",
+    "Javascript/Lecture_56_promise/next.js",
+    "Javascript/Lecture_55_eventLoop/call_back_hell.js",
+    "Javascript/Lecture_55_eventLoop/call_back_",
+    "Javascript/Lecture54_reflow_repaint/Reflow and Repaint.md",
     "Projects to be focus/Projects.md",
     "Projects to be focus",
     "Javascript/tempCodeRunnerFile.js",
@@ -177,23 +188,12 @@
     "Javascript/localStorage/index.js",
     "Javascript/localStorage/index.html",
     "Javascript/localStorage",
-    "Javascript/cookies/cookies.md",
     "Javascript/cookies/localStorage/index.js",
-    "Javascript/cookies/localStorage/index.html",
-    "Javascript/cookies/localStorage",
-    "Javascript/Lecture_57_async_await/Async-Await.md",
-    "Javascript/Lecture_57_async_await/fetch.md",
     "Images/Pasted image 20251127121425.png",
     "Images/Pasted image 20251127121416.png",
     "Images/Pasted image 20251127121013.png",
     "Images/Pasted image 20251127120718.png",
     "Images/Pasted image 20251127120616.png",
-    "Javascript/Lecture_56_promise/Promise.md",
-    "Javascript/Lecture_55_eventLoop/Event Loop.md",
-    "Javascript/Lecture54_reflow_repaint/Reflow and Repaint.md",
-    "Javascript/Lecture53_Events/Events.md",
-    "Javascript/Lecture54_reflow_repaint/index.js",
-    "Javascript/Lecture54_reflow_repaint/index.html",
     "Untitled.md"
   ]
 }

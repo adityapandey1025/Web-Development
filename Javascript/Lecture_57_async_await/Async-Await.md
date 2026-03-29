@@ -24,3 +24,31 @@ Imagine tumne food order kiya:
 - `await` = “Main tab tak nahi jaaunga jab tak food aa nahi jata.”
     
 - `async` = “Mera pura process asynchronous hoga.”
+
+```js
+console.log("Lundd Lee Lee Mera!!!")
+function getId(id){
+    return new Promise((resolve,reject)=>{
+        resolve({id,name:"Aditya"});
+    })
+}
+function getOrder(userId){
+    return new Promise((resolve,reject)=>{
+        resolve([{id:101,item:"Laptop"}]);
+    })
+}
+function getStatus(id){
+    return new Promise((resolve,reject)=>{
+        resolve("Suceess");
+    })
+}
+   
+
+async function getId(){
+    await getOrder();
+    let z=await getStatus();
+    console.log(z)
+    
+}
+getId();
+```

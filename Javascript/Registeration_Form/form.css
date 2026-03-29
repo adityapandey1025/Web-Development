@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 30vw;
+    margin: 0 auto;
+    border: solid grey 0.01rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e9ce6;
+    color: white;
+    font-size: 1.75rem;
+    padding: 0.2rem;
+}
+
+#fname,#lname,#mail,#number,#fatherName,#motherName,#session,#course,#program,#college,#section,#fee-type,#accomodation,#bank,#roll,#bankType,#recipt{
+    display: block;
+}

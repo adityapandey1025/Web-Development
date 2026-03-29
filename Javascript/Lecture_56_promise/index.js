@@ -5,7 +5,7 @@ let mypromise=new Promise((resolve,reject)=>{
         resolve("Resolved");
    }
    else{
-        reject("Rejected");
+        reject("Rejected"); 
    }
    
 })
