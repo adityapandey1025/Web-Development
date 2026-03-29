@@ -44,6 +44,10 @@ async function getWeather(city){
         weatherIcon.src='images/clouds.png';
         console.log(data.weather[0].main);
     }
+    else{
+        weatherIcon.src='images/clouds.png';
+        console.log(data.weather[0].main);
+    }
 
     document.querySelector(".info").style.display="block";
 
@@ -80,6 +84,19 @@ search.addEventListener('click',()=>{
     
     getWeather(city);
 })
+
+document.querySelector(".search input").addEventListener("keydown", (e)=>{
+    if(e.key=="Enter"){
+        resetUI();  
+        let city=document.getElementById("cityName").value.trim();
+        if(!city){
+            console.log("Enter City Name");
+            return;
+        }
+        
+        getWeather(city);
+    }
+});
 
 
 
