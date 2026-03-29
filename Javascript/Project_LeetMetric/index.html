@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeetMetric WebApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="body_container">
         <div class="large_container">
-        <div class="heading">
-            <h1 id="heading">LeetMetric</h1>
-        </div>
-        <div class="search_container">
-            <form action="">
-                <label for="username" id="text" style="color: white; font-weight: 600; ">Enter Your Username below:</label>
-                <br>
+            <div class="heading">
+                <h1 id="heading">LeetMetric</h1>
+            </div>
+            <div class="search_container">
+                <label for="username" id="text">Enter your username below:</label>
                 <div class="search-bar">
-                    <input type="text" id="username" placeholder="Enter Your username here..." style="width: 70%;border-radius: 6.25px; padding: 0.2rem;">
-                <button id="search-button" style="width: 20%; border-radius: 6.25px; padding: 0.2rem;">Search</button>
+                    <input type="text" id="username" placeholder="e.g. john_doe123">
+                    <button id="search-button">Search</button>
                 </div>
-            </form>
-        </div>
-        <div class="cards">
-            <div class="carditem one">Easy</div>
-            <div class="carditem two">Meduim</div>
-            <div class="carditem three">Hard</div>
+            </div>
+            <div class="empty"></div>
+            <div class="cards">
+                <div class="carditem one">
+                    <div class="carditem-inner">
+                        <span class="count" id="easy-count">—</span>
+                        <span class="diff-label">Easy</span>
+                    </div>
+                </div>
+                <div class="carditem two">
+                    <div class="carditem-inner">
+                        <span class="count" id="medium-count">—</span>
+                        <span class="diff-label">Medium</span>
+                    </div>
+                </div>
+                <div class="carditem three">
+                    <div class="carditem-inner">
+                        <span class="count" id="hard-count">—</span>
+                        <span class="diff-label">Hard</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-
-
-
     <script src="script.js"></script>
 </body>
 </html>
