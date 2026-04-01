@@ -23,7 +23,7 @@ async function getLeetcode(username) {
     resetCards();
 
     try {
-        const url = `https://leetcode-stats-api.herokuapp.com/${username}`;
+        const url = `https://leetcode-api-faisalshohag.vercel.app/${username}`;
         const response = await fetch(url);
         const data = await response.json();
 
