@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(135deg, #0f1f47, #3b1f6f, #6a1f9a);
+    overflow: auto;
 }
 .main-container{
     width: 100vw;
@@ -99,7 +100,7 @@ img{
     cursor: pointer;
 }
 
-.task-item{
+.task-items{
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -119,3 +120,4 @@ img{
     text-decoration: line-through;
     color: rgb(117, 112, 112);
 }
+

@@ -1,9 +1,10 @@
-let input=document.getElementById("input-text");
-let btn=document.getElementById("input-button");
-let view=document.querySelector(".view");
+const input=document.getElementById("input-text");
+const search=document.getElementById("input-button");
+const view=document.querySelector(".view");
+
 
 function getTodos(){
-    return JSON.parse(localStorage.getItem("todos")) ||[];
+    return JSON.parse(localStorage.getItem("todos")) || [];
 }
 
 function saveTodos(todos){
@@ -13,33 +14,24 @@ function saveTodos(todos){
 function renderTodos(){
     view.innerHTML="";
     let todos=getTodos();
-    
+
     todos.forEach((todo,index)=>{
-        // create wrapper class
         let task=document.createElement('div');
         task.classList.add("task-items");
 
-        //create text content
         let content=document.createElement('span');
-        content.textContent=todo.text.toUpperCase();
+        content.innerText=todo.text.toUpperCase();
 
         if(todo.completed){
-            content.classList.add('completed');
+            content.classList.add("completed");
         }
-
-        let check=document.createElement('input');
-        check.type='checkbox';
-        check.checked=todo.completed;
 
         let btn=document.createElement('button');
         btn.innerText="X";
 
-        btn.addEventListener('click',()=>{
-            let todos=getTodos();
-            todos.splice(index,1);
-            saveTodos(todos);
-            renderTodos();
-        })
+        let check=document.createElement('input');
+        check.type="checkbox";
+        check.checked=todo.completed;
 
         check.addEventListener('click',()=>{
             let todos=getTodos();
@@ -48,30 +40,38 @@ function renderTodos(){
             renderTodos();
         })
 
+        btn.addEventListener('click',()=>{
+            let todos=getTodos();
+            todos.splice(index,1);
+            saveTodos(todos);
+            renderTodos();
+        })
+
         task.appendChild(content);
-        task.appendChild(check)
+        task.appendChild(check);
         task.appendChild(btn);
 
         view.appendChild(task);
 
-
     })
+
+
 }
 
 function addTask(){
-    let taskText=input.value.trim();
-    if(taskText=== "") return;
+    let inputText=input.value.trim();
+    if(!inputText){
+        return ;
+    }
 
     let todos=getTodos();
-    todos.push({text:taskText,completed : false});
-
-    saveTodos(todos);
+    todos.push({text:inputText,completed:false});
+    saveTodos(todos)
     renderTodos();
-
     input.value="";
-
 }
-btn.addEventListener('click',addTask);
+
+search.addEventListener('click',addTask);
 input.addEventListener('keydown',(e)=>{
     if(e.key=="Enter"){
         addTask();

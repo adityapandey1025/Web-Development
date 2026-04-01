@@ -11,10 +11,14 @@
             "id": "f756b94b1f73173c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Javascript/localStorage/Local Storage.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Local Storage"
             }
           }
         ]
@@ -165,14 +169,15 @@
   },
   "active": "f756b94b1f73173c",
   "lastOpenFiles": [
+    "Javascript/cookies/image.png",
+    "Javascript/localStorage/Local Storage.md",
+    "Javascript/cookies/cookies.md",
+    "README.md",
     "Javascript/Lecture_56_promise/Promise.md",
     "Javascript/Lecture_56_promise/Callback Hell and Promise.md",
     "Javascript/Lecture_57_async_await/Async-Await.md",
     "Javascript/Lecture_55_eventLoop/Event Loop.md",
     "Javascript/Lecture53_Events/Events.md",
-    "Javascript/localStorage/Local Storage.md",
-    "Javascript/cookies/cookies.md",
-    "Javascript/cookies/image.png",
     "Javascript/Lecture_57_async_await/fetch.md",
     "Javascript/Lecture_56_promise/code.html",
     "Javascript/Lecture_56_promise/next.js",
