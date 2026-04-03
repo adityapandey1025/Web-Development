@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background: #1E293B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: whitesmoke;
+    border-radius: 0.5rem;
+    min-height: 5rem;
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.69rem;
+    padding: 2.69rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #1E293B;
+    font-weight: 600;
+}
+
+.card span {
+    font-size: 0.85rem;
+    color: #64748B;
+}
+
+input[type="text"] {
+    padding: 0.6rem 0.8rem;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    outline: none;
+    background: #fff;
+    color: #1E293B;
+}
+
+input[type="text"]:focus {
+    border-color: #1E293B;
+}
+
+.qr-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    display: none;
+    border: 1.5px dashed #CBD5E1;
+    border-radius: 0.4rem;
+}
+
+.qr-img img {
+    width: 180px;
+    height: 180px;
+    display: none;
+    border-radius: 0.3rem;
+}
+
+button {
+    padding: 0.65rem;
+    background: #1E293B;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #334155;
+}

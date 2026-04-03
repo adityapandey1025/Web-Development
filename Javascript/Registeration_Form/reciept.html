@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Receipt</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        @media print {
+        #printbtn {
+            display: none;
+        }
+}
+    </style>
+</head>
+
+<body>
+
+<div class="box" id="receiptBox">
+    <h2>Fee Receipt</h2>
+    <button id="printbtn">print</button>
+    <div id="container"></div>
+</div>
+
+<script>
+const data = JSON.parse(localStorage.getItem("formData"));
+const btn = document.getElementById("printbtn");
+const container = document.getElementById("container");
+
+if(data){
+    container.innerHTML = `
+        <p><b>Receipt No:</b> ${data.receipt}</p>
+        <p><b>Name:</b> ${data.fname} ${data.lname}</p>
+        <p><b>Email:</b> ${data.email}</p>
+        <p><b>Phone:</b> ${data.phone}</p>
+        <p><b>Father:</b> ${data.father}</p>
+        <p><b>Mother:</b> ${data.mother}</p>
+        <p><b>Roll:</b> ${data.roll}</p>
+        <p><b>Session:</b> ${data.session}</p>
+        <p><b>Course:</b> ${data.course}</p>
+        <p><b>Program:</b> ${data.program}</p>
+        <p><b>College:</b> ${data.college}</p>
+        <p><b>Section:</b> ${data.section}</p>
+        <p><b>Fee Type:</b> ${data.feeType}</p>
+        <p><b>Payment:</b> ${data.bankType}</p>
+        <p><b>Date:</b> ${new Date().toLocaleDateString()}</p>
+    `;
+}
+
+btn.addEventListener('click', (e) => {
+    // btn.style.display=none;  CSS Used
+    window.print();
+});
+</script>
+
+</body>
+</html>

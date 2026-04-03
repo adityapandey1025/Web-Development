@@ -1,28 +1,280 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.box{
-    width: 30vw;
-    margin: 0 auto;
-    border: solid grey 0.01rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
-    
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
 }
 
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1e9ce6;
-    color: white;
-    font-size: 1.75rem;
-    padding: 0.2rem;
+/* ── Wrapper ── */
+.reg-wrap {
+  width: 100%;
+  max-width: 560px;
 }
 
-#fname,#lname,#mail,#number,#fatherName,#motherName,#session,#course,#program,#college,#section,#fee-type,#accomodation,#bank,#roll,#bankType,#recipt{
-    display: block;
+/* ── Header ── */
+.reg-header {
+  background: #1e9ce6;
+  border-radius: 12px 12px 0 0;
+  padding: 1.4rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.reg-header-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.reg-header h2 {
+  font-family: 'Fraunces', serif;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.reg-header p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12.5px;
+  margin: 3px 0 0;
+}
+
+/* ── Card body ── */
+.reg-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 1.75rem 2rem 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Section labels ── */
+.section-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1e9ce6;
+  margin: 1.5rem 0 0.85rem;
+  padding-bottom: 7px;
+  border-bottom: 1.5px solid #d6eefb;
+}
+
+.section-label:first-child {
+  margin-top: 0;
+}
+
+/* ── Field layout ── */
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.field-full {
+  margin-bottom: 12px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* ── Labels ── */
+.field-group label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+/* ── Inputs & Selects ── */
+.field-group input[type="text"],
+.field-group input[type="email"],
+.field-group input[type="tel"],
+.field-group select {
+  height: 38px;
+  padding: 0 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #1e293b;
+  font-size: 13.5px;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.field-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.field-group input::placeholder {
+  color: #b0bec5;
+}
+
+.field-group input:focus,
+.field-group select:focus {
+  outline: none;
+  border-color: #1e9ce6;
+  box-shadow: 0 0 0 3px rgba(30, 156, 230, 0.12);
+}
+
+/* ── Radio group ── */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 6px 0 2px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13.5px;
+  color: #334155;
+  cursor: pointer;
+}
+
+.radio-item input[type="radio"] {
+  accent-color: #1e9ce6;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* ── Receipt row ── */
+.receipt-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.receipt-input {
+  flex: 1;
+  height: 38px;
+  padding: 0 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 13.5px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: default;
+}
+
+.generate-btn {
+  height: 38px;
+  padding: 0 16px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.generate-btn:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+.generate-btn:active {
+  transform: scale(0.98);
+}
+
+/* ── Form actions ── */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.btn-reset {
+  flex: 1;
+  height: 42px;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  color: #64748b;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-reset:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.btn-submit {
+  flex: 2;
+  height: 42px;
+  background: #1e9ce6;
+  border: none;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btn-submit:hover {
+  background: #1789ce;
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .reg-card {
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .radio-group {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 }

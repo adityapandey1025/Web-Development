@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a2e;
+}
+
+.card {
+    background: #ffffff;
+    width: 420px;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.output-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0eeff;
+    border: 2px solid #6c63ff;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+#password-display {
+    font-size: 15px;
+    color: #333;
+    word-break: break-all;
+    flex: 1;
+}
+
+#copy-btn {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+#copy-btn:hover {
+    background: #574fd6;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.options label {
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #6c63ff;
+    margin-top: 6px;
+    display: block;
+}
+
+input[type="checkbox"] {
+    accent-color: #6c63ff;
+    width: 16px;
+    height: 16px;
+}
+
+#generate-btn {
+    width: 100%;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#generate-btn:hover {
+    background: #574fd6;
+}
