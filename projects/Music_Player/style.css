@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+}
+
+/* ── CARD ─────────────────────────────────────── */
+.card {
+  width: 340px;
+  background: #111111;
+  border-radius: 28px;
+  padding: 24px 24px 28px;
+  border: 1px solid #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── TOP ROW (heart + repeat) ─────────────────── */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top i {
+  font-size: 18px;
+  color: #3a3a3a;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.15s;
+}
+
+.top i:hover {
+  color: #aaa;
+}
+
+/* JS: toggle class "liked" on heart icon */
+.top .fa-heart.liked {
+  color: #ff4d6d;
+}
+
+/* JS: toggle class "active" on repeat icon */
+.top .fa-repeat.active {
+  color: #00ffa3 !important;
+}
+
+/* ── MIDDLE (album art) ───────────────────────── */
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+.animation {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #1e1e1e;
+  box-shadow: 0 0 0 8px #141414, 0 0 0 9px #222;
+  transition: box-shadow 0.4s;
+}
+
+/* JS: toggle class "playing" on .animation */
+.animation.playing {
+  animation: spin 6s linear infinite;
+  box-shadow: 0 0 0 8px #141414, 0 0 0 9px #222,
+              0 0 30px rgba(0, 255, 163, 0.15);
+}
+
+.animation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── LOWER SECTION ────────────────────────────── */
+.lower {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── AUDIO (visible during dev — remove later) ── */
+audio {
+  width: 100%;
+  height: 36px;
+  border-radius: 20px;
+  outline: none;
+  accent-color: #00ffa3;
+}
+
+/* ── BUTTONS ROW ──────────────────────────────── */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ── FORWARD / BACKWARD ───────────────────────── */
+.forward,
+.backward {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.forward:hover,
+.backward:hover {
+  background: #242424;
+}
+
+.forward:active,
+.backward:active {
+  transform: scale(0.92);
+}
+
+.forward i,
+.backward i {
+  font-size: 15px;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.forward:hover i,
+.backward:hover i {
+  color: #ccc;
+}
+
+/* ── PLAY / PAUSE ─────────────────────────────── */
+.play_pause {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #00ffa3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 0 22px rgba(0, 255, 163, 0.3);
+}
+
+.play_pause:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 32px rgba(0, 255, 163, 0.5);
+}
+
+.play_pause:active {
+  transform: scale(0.95);
+}
+
+.play_pause i {
+  font-size: 20px;
+  color: #0d0d0d;
+}
+
+/* Default: show play, hide pause */
+.play_pause .fa-pause {
+  display: none;
+}
+
+/* JS: toggle class "playing" on .play_pause to swap icons */
+.play_pause.playing .fa-play {
+  display: none;
+}
+
+.play_pause.playing .fa-pause {
+  display: inline-block;
+}
+
+/* ── SLIDER ───────────────────────────────────── */
+#slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: #1e1e1e;
+  outline: none;
+  cursor: pointer;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00ffa3;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 255, 163, 0.5);
+  transition: transform 0.15s;
+}
+
+#slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+#slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00ffa3;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 255, 163, 0.5);
+}
