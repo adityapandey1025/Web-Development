@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(154, 228, 182)
+}
+
+.board-look{
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,50px);
+    grid-template-rows: repeat(3,50px);
+    
+}
+
+.square{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h2{
+    padding-left: 5rem;
+    padding-top: 2rem;
+    color: rgb(93, 31, 236);
+    margin-bottom: 1rem;
+}
+
+.game {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.game-info {
+  color: black;
+}

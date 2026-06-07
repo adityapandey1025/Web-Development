@@ -51,7 +51,7 @@ body {
 }
 
 /* JS: toggle class "active" on repeat icon */
-.top .fa-repeat.active {
+.top .fa-repeat.active { 
   color: #00ffa3 !important;
 }
 

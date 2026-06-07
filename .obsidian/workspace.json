@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fd5c9e9243be6747",
+        "id": "db96ec9e350c9a41",
         "type": "tabs",
         "children": [
           {
-            "id": "f756b94b1f73173c",
+            "id": "901ffc3147385c20",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/localStorage/Local Storage.md",
-                "mode": "preview",
+                "file": "react/Lecture7_Tailwind/React Props.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Local Storage"
+              "title": "React Props"
             }
           }
         ]
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "react/React JS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for React JS"
             }
           },
           {
@@ -167,36 +168,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "f756b94b1f73173c",
+  "active": "901ffc3147385c20",
   "lastOpenFiles": [
-    "Javascript/cookies/image.png",
-    "Javascript/localStorage/Local Storage.md",
-    "Javascript/cookies/cookies.md",
-    "README.md",
-    "Javascript/Lecture_56_promise/Promise.md",
-    "Javascript/Lecture_56_promise/Callback Hell and Promise.md",
-    "Javascript/Lecture_57_async_await/Async-Await.md",
-    "Javascript/Lecture_55_eventLoop/Event Loop.md",
-    "Javascript/Lecture53_Events/Events.md",
-    "Javascript/Lecture_57_async_await/fetch.md",
-    "Javascript/Lecture_56_promise/code.html",
-    "Javascript/Lecture_56_promise/next.js",
-    "Javascript/Lecture_55_eventLoop/call_back_hell.js",
-    "Javascript/Lecture_55_eventLoop/call_back_",
-    "Javascript/Lecture54_reflow_repaint/Reflow and Repaint.md",
-    "Projects to be focus/Projects.md",
-    "Projects to be focus",
-    "Javascript/tempCodeRunnerFile.js",
-    "Javascript/cookies/localStorage/Local Storage.md",
-    "Javascript/localStorage/index.js",
-    "Javascript/localStorage/index.html",
-    "Javascript/localStorage",
-    "Javascript/cookies/localStorage/index.js",
-    "Images/Pasted image 20251127121425.png",
-    "Images/Pasted image 20251127121416.png",
-    "Images/Pasted image 20251127121013.png",
-    "Images/Pasted image 20251127120718.png",
-    "Images/Pasted image 20251127120616.png",
-    "Untitled.md"
+    "react/Lecture9_bgChanger/readmee.md",
+    "react/Lecture9_bgChanger",
+    "react/Lecture7_Tailwind/tailwind/src/components/Card.jsx",
+    "react/Lecture7_Tailwind/tailwind/src/components",
+    "react/Lecture6/redme.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/zod/src/v4/core/tests/locales/he.test.ts",
+    "react/Lecture7_Tailwind/tailwind/node_modules/zod/src/v4/core/tests/locales/uz.test.ts",
+    "react/Lecture7_Tailwind/tailwind/node_modules/zod/src/v4/core/tests/locales/tr.test.ts",
+    "react/Lecture7_Tailwind/tailwind/node_modules/zod/src/v4/core/tests/locales/ru.test.ts",
+    "react/Lecture7_Tailwind/tailwind/node_modules/zod/src/v4/core/tests/locales/hr.test.ts",
+    "react/Lecture7_Tailwind/tailwind/node_modules/zod/src/v4/core/tests/locales/nl.test.ts",
+    "react/Lecture7_Tailwind/tailwind/node_modules/zod/src/v4/core/tests/locales/fr.test.ts",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/ajv/lib/dotjs/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/flatted/golang/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@vitejs/plugin-react/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@tybys/wasm-util/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@types/react-dom/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@types/react/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@types/json-schema/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@types/estree/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@types/esrecurse/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@tailwindcss/vite/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@tailwindcss/oxide-win32-x64-msvc/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@tailwindcss/node/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@oxc-project/types/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@jridgewell/trace-mapping/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@jridgewell/sourcemap-codec/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@jridgewell/resolve-uri/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@jridgewell/remapping/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@jridgewell/gen-mapping/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@rolldown/pluginutils/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@rolldown/binding-win32-x64-msvc/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@humanwhocodes/retry/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@humanwhocodes/module-importer/README.md",
+    "react/Lecture7_Tailwind/tailwind/node_modules/@humanwhocodes/module-importer/CHANGELOG.md",
+    "react/Lecture7_Tailwind/tailwind/src/assets/vite.svg",
+    "react/Lecture7_Tailwind/tailwind/src/assets/hero.png",
+    "react/Lecture7_Tailwind/tailwind/src/assets/react.svg",
+    "react/Lecture7_Tailwind/tailwind/public/icons.svg",
+    "react/Lecture7_Tailwind/tailwind/public/favicon.svg",
+    "react/Lecture7_Tailwind/tailwind-props/src/assets/react.svg",
+    "react/Lecture7_Tailwind/tailwind-props/src/assets/vite.svg",
+    "react/Lecture7_Tailwind/tailwind-props/src/assets/hero.png",
+    "react/Lecture7_Tailwind/tailwind-props/public/icons.svg",
+    "react/Lecture7_Tailwind/tailwind-props/public/favicon.svg"
   ]
 }
