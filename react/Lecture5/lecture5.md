@@ -1,149 +1,183 @@
-```js
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+# React Hooks - Correct Hinglish Notes 🚀
 
+## Problem: Normal Variable UI Update Kyu Nahi Karta?
+
+Example:
+
+```jsx
 function App() {
-  let counter =18;
-  
-  const upvalue=()=>{
-    counter ++;
-    console.log("value updated ",Math.random()*100);
-    console.log(counter)
+  let counter = 18;
 
-  }
-
-  return (
-    <>
-    <h1>Welcome to react series</h1>
-    <h2>Counter Value is {counter}</h2>
-    <br /><br />
-
-    <button onClick={upvalue}>Up {counter}</button>
-    <br /><br />
-    <button>Down {counter}</button>
-
-    <footer>
-      <p>{counter}</p>
-      <br /><br />
-    </footer>
-
-    </>
-  )
-}
-
-export default App
-
-```
-
-**The Above code changes the value of counter but it doesnt reflect the changes to UI. I have to manually update all the places where counter value increase by using addEventListner property and click argument**
-
-**To resolve this , we need concept of Hooks**
-```js
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
-function App() {
-  let [counter,setCounter]=useState(18);
-  const upvalue=()=>{
-    if(counter===20){
-      alert("Value can go more than 20")
-      return;
-    }
+  const upvalue = () => {
     counter++;
     console.log(counter);
-    setCounter(counter);
-  }
-
-  const downvalue=()=>{
-    if(counter===0){
-      alert("Value can go less than 0")
-      return;
-    }
-    counter--;
-    console.log(counter);
-    setCounter(counter);
-  }
-
+  };
 
   return (
     <>
-    <h1>Welcome to react series</h1>
-    <h2>Counter Value is {counter}</h2>
-    <br /><br />
-
-    <button onClick={upvalue}>Up {counter}</button>
-    <br /><br />
-    <button onClick={downvalue}>Down {counter}</button>
-
-    <footer>
-      <p>{counter}</p>
-      <br /><br />
-    </footer>
-
+      <h2>Counter Value is {counter}</h2>
+      <button onClick={upvalue}>Up</button>
     </>
-  )
+  );
 }
-
-export default App
-
 ```
 
-# React Hooks - Short Hinglish Notes 🚀
+### Kya Hoga?
 
-## What are Hooks?
+Button click karne par:
 
-Hooks React ke special built-in functions hain jo Functional Components ko React ki internal features use karne dete hain.
+```text
+19
+20
+21
+22
+...
+```
+
+Console me values increase hongi.
+
+Lekin UI me hamesha:
+
+```text
+Counter Value is 18
+```
+
+dikhega.
+
+### Why?
+
+React sirf normal JavaScript variable change hone par rerender nahi karta.
+
+```jsx
+counter++;
+```
+
+Ye variable ki value to change karta hai, lekin React ko nahi batata ki UI update karni hai.
+
+Isliye:
+
+- Variable update hota hai.
+    
+- Console me nayi value dikhti hai.
+    
+- UI update nahi hoti.
+    
+
+---
+
+## Kya React Har Click Par App() Dobara Run Karta Hai?
+
+Nahi.
+
+Ye bahut common misconception hai.
+
+Normal variable update karne se:
+
+```jsx
+counter++;
+```
+
+React rerender nahi karta.
+
+Isliye App() dobara execute bhi nahi hota.
+
+React component tab rerender hota hai jab:
+
+- State change ho
+    
+- Props change ho
+    
+- Parent component rerender ho
+    
+- Context value change ho
+    
+
+---
+
+## Solution: useState Hook
+
+React ko UI update karne ke liye state use karte hain.
+
+```jsx
+const [counter, setCounter] = useState(18);
+```
+
+Ab:
+
+```jsx
+setCounter(19);
+```
+
+React ko signal deta hai:
+
+```text
+State Changed
+↓
+React Rerender
+↓
+UI Updated
+```
+
+---
+
+## Correct Counter Example
+
+```jsx
+function App() {
+  const [counter, setCounter] = useState(18);
+
+  const upvalue = () => {
+    if (counter === 20) {
+      alert("Value cannot be more than 20");
+      return;
+    }
+
+    setCounter(counter + 1);
+  };
+
+  const downvalue = () => {
+    if (counter === 0) {
+      alert("Value cannot be less than 0");
+      return;
+    }
+
+    setCounter(counter - 1);
+  };
+
+  return (
+    <>
+      <h2>Counter Value is {counter}</h2>
+
+      <button onClick={upvalue}>
+        Up
+      </button>
+
+      <button onClick={downvalue}>
+        Down
+      </button>
+    </>
+  );
+}
+```
+
+---
+
+# What are Hooks?
+
+Hooks React ke special built-in functions hain jo Functional Components ko React features use karne dete hain.
 
 Examples:
 
 - State
     
-- Lifecycle
+- Lifecycle Features
     
 - Context
     
-- DOM Access
+- Refs
     
 
-React 16.8 se pehle ye features sirf Class Components me available the.
-
----
-
-# Why Hooks?
-
-Problem:
-
-```jsx
-let count = 0;
-```
-
-React rerender hone par:
-
-```text
-App()
-↓
-count = 0
-↓
-Click
-↓
-App()
-↓
-count = 0
-```
-
-Variable ki value reset ho jati hai.
-
-Solution:
-
-React Hooks.
-
-Hooks React ki memory use karte hain.
+React 16.8 se pehle ye features mostly Class Components me use kiye jaate the.
 
 ---
 
@@ -151,19 +185,21 @@ Hooks React ki memory use karte hain.
 
 ## 1. useState()
 
-Data store karta hai.
+Component state ko store aur update karta hai.
 
 ```jsx
 const [count, setCount] = useState(0);
 ```
 
-Example:
+Use Cases:
 
 - Counter
     
 - Dark Mode
     
 - Login State
+    
+- Form Inputs
     
 
 ---
@@ -172,54 +208,53 @@ Example:
 
 Side Effects handle karta hai.
 
-Use Cases:
+Examples:
 
-- API Call
+- API Calls
     
-- Timer
+- Timers
     
-- Event Listener
+- Event Listeners
+    
+- Subscriptions
     
 
 ```jsx
-useEffect(()=>{
-console.log("Loaded");
-},[]);
+useEffect(() => {
+  console.log("Component Mounted");
+}, []);
 ```
 
 ---
 
 ## 3. useRef()
 
-DOM ko directly access karta hai.
-
-Example:
-
-- Input Focus
-    
-- OTP Input
-    
+Value ko rerender ke bina store karta hai aur DOM access deta hai.
 
 ```jsx
-const inputRef = useRef();
+const inputRef = useRef(null);
 ```
+
+Use Cases:
+
+- Focus Input
+    
+- Scroll Position
+    
+- Previous Values
+    
 
 ---
 
 ## 4. useContext()
 
-Shared Data access karta hai.
+Multiple components ke beech data share karta hai.
 
-Problem:  
-Prop Drilling.
-
-Solution:
+Prop Drilling avoid karta hai.
 
 ```text
-Theme
-
-↙ ↓ ↘
-
+Theme Context
+      ↓
 Home Profile Settings
 ```
 
@@ -227,64 +262,71 @@ Home Profile Settings
 
 ## 5. useMemo()
 
-Heavy calculations cache karta hai.
+Expensive calculations ko memoize karta hai.
 
-```text
-Calculate Once
-↓
-Store
-↓
-Reuse
+```jsx
+const result = useMemo(() => {
+  return heavyCalculation(data);
+}, [data]);
 ```
 
 ---
 
 ## 6. useCallback()
 
-Functions ko cache karta hai.
+Function reference ko memoize karta hai.
 
-Extra rerenders ko reduce karta hai.
+```jsx
+const handleClick = useCallback(() => {
+  console.log("Clicked");
+}, []);
+```
 
 ---
 
 ## 7. Custom Hooks
 
-Apni reusable logic likh sakte hain.
+Reusable logic create karne ke liye.
 
 Examples:
 
 ```text
 useFetch()
-useTheme()
 useCounter()
+useTheme()
+useAuth()
 ```
 
 ---
 
 # Rules of Hooks
 
-✅ Top Level par call karo.
+✅ Top level par call karo.
 
-❌ Loop ya if ke andar mat call karo.
+❌ Loop ke andar mat call karo.
 
-✅ Functional Component ya Custom Hook ke andar hi use karo.
+❌ if condition ke andar mat call karo.
+
+❌ Nested function ke andar mat call karo.
+
+✅ Functional Component ya Custom Hook ke andar hi call karo.
 
 ---
 
 # Easy Memory Trick 🚀
 
 ```text
-useState    → Save Data
+useState    → Store State
 
-useEffect   → Do Something
+useEffect   → Side Effects
 
-useRef      → Access DOM
+useRef      → DOM / Mutable Value
 
 useContext  → Share Data
 
-useMemo     → Save Calculation
+useMemo     → Cache Calculation
 
-useCallback → Save Function
+useCallback → Cache Function
 
 Custom Hook → Reuse Logic
 ```
@@ -293,9 +335,4 @@ Custom Hook → Reuse Logic
 
 # Interview Definition
 
-**Hooks are special built-in React functions that allow Functional Components to use React features like State, Lifecycle, Context, and Refs without using Class Components.**
-
-
-
-
-
+Hooks are special built-in React functions that allow Functional Components to use React features such as State, Effects, Context, and Refs without using Class Components.
