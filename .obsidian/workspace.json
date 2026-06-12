@@ -170,6 +170,7 @@
   },
   "active": "371773979c19276a",
   "lastOpenFiles": [
+    "react/Lecture13_ContextAPI/miniContext/package-lock.json",
     "react/Lecture13_ContextAPI/miniContext/src/components/index.js",
     "react/Lecture13_ContextAPI/miniContext/node_modules/@vitejs/plugin-react/dist/refresh-runtime.js",
     "react/Lecture13_ContextAPI/miniContext/node_modules/@vitejs/plugin-react/dist/index.d.ts",
@@ -180,7 +181,6 @@
     "react/Lecture13_ContextAPI/miniContext/src/components/About.jsx",
     "react/Lecture13_ContextAPI/miniContext/src/components/Home.jsx",
     "react/Lecture13_ContextAPI/miniContext/src/components",
-    "react/Lecture13_ContextAPI/miniContext/src/Context/UserContextProvider.jsx",
     "react/Lecture13_ContextAPI/miniContext/node_modules/react/README.md",
     "react/Lecture13_ContextAPI/Context API Module 1.md",
     "react/Lecture13_ContextAPI/createContext (Moduke 2).md",
