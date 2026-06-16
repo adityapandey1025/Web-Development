@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "082461fe11831a35",
+        "id": "c106e85e04f10c0e",
         "type": "tabs",
         "children": [
           {
-            "id": "371773979c19276a",
+            "id": "4678162d12958131",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "react/Lecture13_ContextAPI/Module 6.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Module 6"
+              "title": "New tab"
             }
           }
         ]
@@ -168,8 +164,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "371773979c19276a",
+  "active": "4678162d12958131",
   "lastOpenFiles": [
+    "react/Lecture14_localStorage/TodoApp/components/item.css",
+    "react/Lecture14_localStorage/TodoApp/components/form.css",
+    "react/Lecture6/React Fiber Architecture.md",
+    "react/Lecture7_Tailwind/React Props.md",
+    "react/Lecture5/useRef.md",
+    "react/Lecture5/Types of Hooks.md",
+    "react/Lecture13_ContextAPI/Module 6.md",
     "react/Lecture13_ContextAPI/ThemeChanger/public/course.avif",
     "react/Lecture13_ContextAPI/ThemeChanger/public/image.png",
     "react/Lecture13_ContextAPI/ThemeChanger/assets/course.avif",
@@ -182,7 +185,6 @@
     "react/Lecture13_ContextAPI/ThemeChanger/node_modules/react-icons/fi/index.d.ts",
     "react/Lecture13_ContextAPI/ThemeChanger/node_modules/react-icons/fc/index.d.ts",
     "react/Lecture13_ContextAPI/ThemeChanger/node_modules/react-icons/fa6/index.d.ts",
-    "react/Lecture13_ContextAPI/ThemeChanger/node_modules/react-icons/fa/index.d.ts",
     "react/Lecture13_ContextAPI/ThemeChanger/node_modules/react-icons/README.md",
     "react/Lecture13_ContextAPI/ThemeChanger/node_modules/@emnapi/runtime/README.md",
     "react/Lecture13_ContextAPI/ThemeChanger/node_modules/tslib/README.md",
@@ -194,7 +196,6 @@
     "react/Lecture13_ContextAPI/assets/image.png",
     "react/Lecture13_ContextAPI/assets/course.avif",
     "react/Lecture13_ContextAPI/Module 5.md",
-    "react/Lecture13_ContextAPI/Module 6.md",
     "react/Lecture13_ContextAPI/miniContext/node_modules/fdir/README.md",
     "react/Lecture13_ContextAPI/miniContext/node_modules/tinyglobby/README.md",
     "react/Lecture13_ContextAPI/Module 4.md",
@@ -209,12 +210,7 @@
     "react/Lecture13_ContextAPI/miniContext/node_modules/@babel/template/README.md",
     "react/Lecture13_ContextAPI/miniContext/node_modules/@babel/helper-validator-identifier/README.md",
     "react/Lecture13_ContextAPI/miniContext/node_modules/@babel/helper-string-parser/README.md",
-    "react/Lecture13_ContextAPI/miniContext/node_modules/@babel/helper-module-imports/README.md",
-    "react/Lecture13_ContextAPI/miniContext/node_modules/@babel/helpers/README.md",
-    "react/Lecture13_ContextAPI/miniContext/node_modules/react-dom/README.md",
-    "react/Lecture13_ContextAPI/miniContext/node_modules/@babel/types/README.md",
     "react/Lecture13_ContextAPI/miniContext/src/assets/vite.svg",
-    "react/Lecture13_ContextAPI/miniContext/src/assets/react.svg",
-    "react/Lecture13_ContextAPI/miniContext/src/assets/hero.png"
+    "react/Lecture13_ContextAPI/miniContext/src/assets/react.svg"
   ]
 }
