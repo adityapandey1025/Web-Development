@@ -8,6 +8,11 @@ app.get('/',(req,res)=>{
     res.send("hello madharchodo");
 })
 
+
+app.get('/login',(req,res)=>{
+    res.send("Kya naam hai re tera");
+})
+
 app.listen(process.env.PORT,()=>{
     console.log("app is running at port ",process.env.PORT);
     console.log("something changes ....");
