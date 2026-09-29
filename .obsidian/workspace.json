@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "37e2783fdde2b9ae",
+        "id": "efab967512ee4bf1",
         "type": "tabs",
         "children": [
           {
-            "id": "ae5d991238e5de90",
+            "id": "ca98aba3c433b945",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "react/Lecture15_Redux/Module 6.md",
-                "mode": "preview",
+                "file": "backend-nodeJS/Lecture2/readme.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 6"
+              "title": "readme"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -168,53 +170,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "ae5d991238e5de90",
+  "active": "ca98aba3c433b945",
   "lastOpenFiles": [
-    "react/Lecture15_Redux/Module 4.md",
-    "react/Lecture12/React Router Module 3.md",
-    "react/Lecture12/React Router Module 2.md",
+    "backend-nodeJS/Lecture2/node_modules/dotenv/dist/index.cjs",
+    "backend-nodeJS/Lecture2/node_modules/dotenv/dist/index.d.ts",
+    "backend-nodeJS/Lecture2/node_modules/dotenv/dist/config.cjs",
+    "backend-nodeJS/Lecture2/node_modules/dotenv/dist",
+    "backend-nodeJS/Lecture2/node_modules/dotenv/LICENSE",
+    "backend-nodeJS/Lecture2/node_modules/dotenv",
+    "backend-nodeJS/Lecture2/node_modules/object-inspect/test/browser/dom.js",
+    "backend-nodeJS/Lecture2/node_modules/object-inspect/test/values.js",
+    "backend-nodeJS/Lecture2/node_modules/object-inspect/test/undef.js",
+    "backend-nodeJS/Lecture2/node_modules/object-inspect/test/toStringTag.js",
+    "backend-nodeJS/Lecture2/node_modules/object-inspect/test/quoteStyle.js",
+    "backend-nodeJS/Lecture2/node_modules/ms/license.md",
+    "backend-nodeJS/Lecture2/readme.md",
+    "backend-nodeJS/Lecture1/lec-1-Intro.md",
+    "backend-nodeJS/Lecture1/Lecture 1.md",
+    "Images/Pasted image 20260929205231.png",
+    "Images/Pasted image 20260929204948.png",
+    "Images/Pasted image 20260929204804.png",
+    "Images/Pasted image 20260929202432.png",
+    "backend-nodeJS/readme.md",
+    "backend-nodeJS/Untitled.md",
+    "backend/backend.md",
+    "database/Database.md",
+    "database/sql/Sql_lec_01.md",
+    "database/Untitled.md",
+    "projects/Projects.md",
+    "Javascript/Lecture_57_async_await/fetch.md",
+    "Javascript/Lecture_57_async_await/Async-Await.md",
+    "Javascript/cookies/cookies.md",
     "react/React-Hook-Form/React Hook Form Notes (Module 1 - 4).md",
-    "react/MegaProject/MegaBlog/src/components/Post-form/Postform.jsx",
-    "react/MegaProject/MegaBlog/src/components/Post-form",
-    "react/MegaProject/MegaBlog/src/components/RTE.jsx",
-    "react/MegaProject/MegaBlog/src/components/AuthLayout.jsx",
-    "react/MegaProject/MegaBlog/src/components/Signup.jsx",
-    "react/MegaProject/MegaBlog/src/components/Signup",
-    "react/React-Hook-Form",
-    "react/MegaProject/MegaBlog/node_modules/@tailwindcss/oxide/index.js",
-    "react/MegaProject/MegaBlog/node_modules/@tailwindcss/node/dist/require-cache.js",
-    "react/MegaProject/MegaBlog/node_modules/@tailwindcss/node/dist/require-cache.d.ts",
-    "react/MegaProject/MegaBlog/node_modules/@tailwindcss/vite/README.md",
-    "react/MegaProject/MegaBlog/node_modules/enhanced-resolve/README.md",
-    "react/MegaProject/MegaBlog/node_modules/tailwindcss/README.md",
-    "react/MegaProject/MegaBlog/node_modules/jiti/README.md",
-    "react/MegaProject/MegaBlog/node_modules/@emnapi/wasi-threads/README.md",
-    "react/MegaProject/MegaBlog/node_modules/tslib/SECURITY.md",
-    "react/MegaProject/MegaBlog/node_modules/tslib/README.md",
-    "react/MegaProject/MegaBlog/node_modules/@emnapi/core/README.md",
-    "react/MegaProject/MegaBlog/node_modules/graceful-fs/README.md",
-    "react/MegaProject/MegaBlog/node_modules/magic-string/README.md",
-    "react/MegaProject/MegaBlog/node_modules/tapable/README.md",
-    "react/MegaProject/MegaBlog/node_modules/@tybys/wasm-util/README.md",
-    "react/Lecture12/Loader.md",
-    "react/Lecture12/# React Router Module 1.md",
-    "react/Lecture12/Params.md",
     "react/Lecture15_Redux/Module 8.md",
     "react/Lecture15_Redux/Module 7.md",
     "react/Lecture15_Redux/Module 6.md",
+    "react/Lecture15_Redux/Module 4.md",
     "react/Lecture15_Redux/Module 5.md",
-    "react/Lecture15_Redux/TodoRedux/node_modules/redux-thunk/LICENSE.md",
-    "react/Lecture15_Redux/TodoRedux/node_modules/redux-thunk/README.md",
-    "react/Lecture15_Redux/TodoRedux/node_modules/reselect/README.md",
+    "react/Lecture15_Redux/Redux Module 3.md",
+    "react/Lecture15_Redux/Module 2.md",
+    "react/Lecture15_Redux/Module1.md",
+    "react/Lecture13_ContextAPI/Module 3.md",
+    "react/Lecture13_ContextAPI/Module 6.md",
     "react/Lecture15_Redux/TodoRedux/src/assets/vite.svg",
     "react/Lecture15_Redux/TodoRedux/src/assets/react.svg",
     "react/Lecture15_Redux/TodoRedux/src/assets/hero.png",
     "react/Lecture15_Redux/TodoRedux/public/icons.svg",
     "react/Lecture15_Redux/TodoRedux/public/favicon.svg",
-    "react/Lecture13_ContextAPI/ThemeChanger/public/course.avif",
-    "react/Lecture13_ContextAPI/ThemeChanger/public/image.png",
-    "react/Lecture13_ContextAPI/ThemeChanger/assets/course.avif",
-    "react/Lecture13_ContextAPI/ThemeChanger/components/course.png",
-    "react/Lecture13_ContextAPI/ThemeChanger/components/course.avif"
+    "react/Lecture13_ContextAPI/ThemeChanger/public/course.avif"
   ]
 }
