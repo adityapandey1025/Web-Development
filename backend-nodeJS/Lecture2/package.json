@@ -1,0 +1,25 @@
+{
+  "name": "backendchai",
+  "version": "1.0.0",
+  "description": "A repo where u will learn backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "web_dev"
+  },
+  "keywords": [
+    "chai",
+    "npm",
+    "node"
+  ],
+  "author": "AdityaPandey",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1"
+  }
+}
