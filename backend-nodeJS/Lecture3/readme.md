@@ -202,6 +202,8 @@ export default defineConfig({
 })
 ```
 
+![[Pasted image 20261005014148.png]]
+
 This tells Vite:
 
 > If a request starts with `/api`, forward it to the backend.
