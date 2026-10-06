@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend-nodeJS/Lecture6/youtube_backend/Lecture 8.md",
+                "file": "backend-nodeJS/Lecture6/readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 8"
+              "title": "readme"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bcf3ceb75a3fa5f7",
@@ -172,17 +173,28 @@
   },
   "active": "f4434367f7ba50c2",
   "lastOpenFiles": [
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/mongoose/index.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/mongoose/package.json",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/dotenv/dist/index.cjs",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/dotenv/dist/index.d.ts",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/dotenv/dist/config.cjs",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/dotenv/dist/config.d.ts",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/dotenv/dist",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/dotenv/package.json",
-    "backend-nodeJS/Lecture6/youtube_backend/src/db/index.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/router/lib/route.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/router/lib/layer.js",
+    "backend-nodeJS/Lecture6/youtube_backend/src/utils/ApiResponse.js",
+    "backend-nodeJS/Lecture6/youtube_backend/src/utils/ApiErrors.js",
+    "backend-nodeJS/Lecture6/youtube_backend/src/utils/apiErrors.js",
+    "backend-nodeJS/Lecture6/youtube_backend/src/utils/asyncHandler.js",
+    "Images/Pasted image 20261006174629.png",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/node_modules/cookie-signature/Readme.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/node_modules/cookie-signature/index.js",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/node_modules/cookie-signature/package.json",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/node_modules/cookie-signature/History.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/node_modules/cookie-signature",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/README.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/package.json",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/node_modules",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/LICENSE",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/index.js",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cookie-parser/HISTORY.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/object-assign/readme.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cors/README.md",
+    "Images/Pasted image 20261006112929.png",
+    "backend-nodeJS/Lecture6/youtube_backend/Lecture 8.md",
+    "backend-nodeJS/Lecture6/readme(lecture 7).md",
+    "backend-nodeJS/Lecture6/readme.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/router/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/router/HISTORY.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/mongodb/README.md",
@@ -193,8 +205,6 @@
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bson/LICENSE.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/whatwg-url/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/sift/README.md",
-    "backend-nodeJS/Lecture6/readme(lecture 7).md",
-    "backend-nodeJS/Lecture6/youtube_backend/Lecture 8.md",
     "backend-nodeJS/Lecture3/readme.md",
     "Images/Pasted image 20261005014148.png",
     "backend-nodeJS/backendFolderStructureProfessional/node_modules/supports-color/readme.md",
@@ -202,21 +212,12 @@
     "backend-nodeJS/backendFolderStructureProfessional/node_modules/ignore-by-default/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/minimatch/LICENSE.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/normalize-path/README.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/ms/readme.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/fill-range/README.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/anymatch/README.md",
     "Images/Pasted image 20261004215656.png",
-    "backend-nodeJS/Lecture4/readme.md",
-    "backend-nodeJS/Lecture5/models/hospitalManagementSystem/node_modules/whatwg-url/README.md",
-    "backend-nodeJS/Lecture5/models/hospitalManagementSystem/node_modules/tr46/README.md",
-    "backend-nodeJS/Lecture5/models/hospitalManagementSystem/node_modules/sparse-bitfield/README.md",
     "Images/Pasted image 20261003163823.png",
     "Images/Pasted image 20261003163809.png",
     "Images/Pasted image 20261003163749.png",
     "Images/Pasted image 20261001100716.png",
     "Images/Pasted image 20261001100652.png",
-    "Images/Pasted image 20261001100633.png",
-    "Images/Pasted image 20260930144625.png",
-    "backend-nodeJS/Lecture3/frontend/src/assets/react.svg"
+    "Images/Pasted image 20261001100633.png"
   ]
 }
