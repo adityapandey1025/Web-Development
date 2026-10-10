@@ -50,6 +50,51 @@ coverage
 
 ```
 
+## app.js
+````
+Responsible for **Express app configuration**.
+
+- Create Express app
+- Add middlewares
+- Configure CORS, cookies, JSON, etc.
+- Register routes
+- Error handling
+- Export `app`
+
+```js
+const app = express();
+
+app.use(express.json());
+app.use(cors());
+app.use(cookieParser());
+
+app.use("/api/v1/users", userRouter);
+
+export { app };
+````
+
+## index.js
+
+Responsible for **starting the backend**.
+
+- Load `.env`
+- Connect to database
+- Start server with `app.listen()`
+
+```
+dotenv.config();
+
+connectDB()
+    .then(() => {
+        app.listen(process.env.PORT);
+    });
+```
+
+### Remember
+
+`app.js` → **Configure the app**
+
+`index.js` → **Start the app**
 
 ## **Making mongoDB connection**
 **We have 2 ways by which we can connect mongoDB to application**
@@ -789,5 +834,16 @@ const asyncHandler=(fn)=>{
     }
 
 }
+
+// or 
+const asyncHandler=(requestHandler)=>(req,res,next)=>{
+
+    Promise.resolve(requestHandler(req,res,next)).catch(err=>next(err));
+
+}
+
+
+export {asyncHandler};
 ```
+
 
