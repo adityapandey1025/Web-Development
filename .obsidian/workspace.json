@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "98f30a2ee8c489a1",
+        "id": "65c7d4e248b7455e",
         "type": "tabs",
         "children": [
           {
-            "id": "f4434367f7ba50c2",
+            "id": "1e1f509cc8f9c408",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "backend-nodeJS/Lecture3/readme.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "readme"
+              "title": "New tab"
             }
           }
         ]
@@ -170,23 +166,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "f4434367f7ba50c2",
+  "active": "1e1f509cc8f9c408",
   "lastOpenFiles": [
-    "backend-nodeJS/Lecture3/readme2.md",
-    "backend-nodeJS/Lecture2/readme.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/bcrypt.js",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/package.json",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples/forever_gen_salt.js",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples/async_compare.js",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/linux-arm64/bcrypt.musl.node",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/win32-arm64/bcrypt.node",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/linux-arm64/bcrypt.glibc.node",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/linux-x64/bcrypt.glibc.node",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/win32-x64/bcrypt.node",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/linux-x64/bcrypt.musl.node",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/tools/README.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/README.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/LICENSE.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-gyp-build/SECURITY.md",
+    "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-gyp-build/README.md",
     "backend-nodeJS/Lecture6/readme.md",
+    "backend-nodeJS/Async Await -1.md",
+    "backend-nodeJS/Lecture6/youtube_backend/Lecture 10.md",
     "backend-nodeJS/Lecture6/youtube_backend/Lecture 12.md",
     "backend-nodeJS/Lecture6/youtube_backend/Lecture 11.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/examples/upload-image.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/examples/upload-large-video.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/examples/transform-and-deliver-video.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/examples/transform-and-deliver-image.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/examples/sign-browser-upload.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/examples/moderate-upload.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/examples",
-    "backend-nodeJS/Lecture6/youtube_backend/src/middlewares/multer.middlewares.js",
-    "backend-nodeJS/Lecture6/youtube_backend/src/utils/cloudinary.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/types/index.d.ts",
+    "backend-nodeJS/Lecture6/readme(lecture 7).md",
+    "backend-nodeJS/readme.md",
+    "backend-nodeJS/Lecture3/readme.md",
+    "backend-nodeJS/Lecture3/readme2.md",
+    "backend-nodeJS/Lecture2/readme.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/use-structured-metadata.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/upload-large-video.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/upload-image.md",
@@ -197,17 +204,6 @@
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/search-and-manage-assets.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/platform-capabilities.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/get-credentials.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/import-and-call.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/moderate-upload.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/configure-cloudinary.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/CHANGELOG.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/multer/node_modules/mime-db/README.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/multer/node_modules/mime-db/HISTORY.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/multer/node_modules/mime-types/README.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/multer/node_modules/mime-types/HISTORY.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/multer/node_modules/type-is/README.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/multer/node_modules/type-is/HISTORY.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/mongoose-aggregate-paginate-v2/static/banner.jpg",
     "Images/Pasted image 20261006174629.png",
     "Images/Pasted image 20261006112929.png",
