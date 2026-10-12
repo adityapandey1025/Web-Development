@@ -45,7 +45,13 @@ const registerUser=asyncHandler(async (req,res)=>{
 
     const avatarLocalPath=req.files?.avatar[0]?.path;
 
-    const coverImageLocalPath=req.files?.coverImage[0]?.path;
+    // const coverImageLocalPath=req.files?.coverImage[0]?.path;
+
+    let coverImageLocalPath;
+
+    if(req.files && Array.isArray(req.files.coverImage) && req.files.coverImage.length >0){
+        coverImageLocalPath=req.files.coverImage[0].path;
+    }
 
     if(!avatarLocalPath){
         throw new ApiErrors(400,"Avatar file is required");
@@ -53,14 +59,14 @@ const registerUser=asyncHandler(async (req,res)=>{
 
     const avatar=await uploadFileOnCloudinary(avatarLocalPath);
 
-
+    
     const coverImage=await uploadFileOnCloudinary(coverImageLocalPath);
 
     if(!avatar){
-        throw new Errors(500,"Uploadation error on server");
+        throw new ApiErrors(500,"Uploadation error on server");
     }
 
-    const user=User.create({
+    const user=await User.create({
         username:username.toLowerCase(),
         fullName,
         email,
@@ -78,10 +84,13 @@ const registerUser=asyncHandler(async (req,res)=>{
         throw new ApiErrors(500,"Something went wrong while registering User");
     }
 
+    
+
     return res.status(200).json(
         new ApiResponse(200,createdUser,"User registeration Successfully")
     )
 
+    
 
 })
 

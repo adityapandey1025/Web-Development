@@ -1,0 +1,42 @@
+$kind: http-request
+description: ""
+url: "{{youtube-chai}}/user/register"
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+body:
+  type: formdata
+  content:
+    - type: text
+      key: fullName
+      value: bhdb
+      description: ""
+      disabled: false
+    - type: text
+      key: username
+      value: jjnjnj
+      description: ""
+      disabled: false
+    - type: text
+      key: email
+      value: njn
+      description: ""
+      disabled: false
+    - type: text
+      key: password
+      value: jn
+      description: ""
+      disabled: false
+    - type: file
+      key: avatar
+      src:
+        - /C:/Users/adity/OneDrive/Pictures/Camera Roll/WIN_20260803_08_40_10_Pro.jpg
+      description: ""
+      disabled: false
+    - type: file
+      key: coverImage
+      src:
+        - /C:/Users/adity/OneDrive/Pictures/IMG-20240902-WA0001.jpg
+      description: ""
+      disabled: false
+order: 1000
