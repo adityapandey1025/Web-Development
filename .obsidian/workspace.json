@@ -11,10 +11,14 @@
             "id": "1e1f509cc8f9c408",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "backend-nodeJS/Lecture6/readme(lecture 7).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "readme(lecture 7)"
             }
           }
         ]
@@ -168,6 +172,9 @@
   },
   "active": "1e1f509cc8f9c408",
   "lastOpenFiles": [
+    "backend-nodeJS/Lecture6/readme.md",
+    "backend-nodeJS/Lecture6/youtube_backend/Lecture 10.md",
+    "backend-nodeJS/readme.md",
     "backend-nodeJS/Lecture6/postman/postman/collections/Youtube-chai/user/refresh-token.request.yaml",
     "backend-nodeJS/Lecture6/postman/postman/collections/Youtube-chai/user/logout.request.yaml",
     "backend-nodeJS/Lecture6/postman/postman/collections/Youtube-chai/user/login.request.yaml",
@@ -180,19 +187,15 @@
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples/forever_gen_salt.js",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples/async_compare.js",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/linux-arm64/bcrypt.musl.node",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/tools/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/LICENSE.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-gyp-build/SECURITY.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-gyp-build/README.md",
-    "backend-nodeJS/Lecture6/readme.md",
     "backend-nodeJS/Async Await -1.md",
-    "backend-nodeJS/Lecture6/youtube_backend/Lecture 10.md",
     "backend-nodeJS/Lecture6/youtube_backend/Lecture 12.md",
     "backend-nodeJS/Lecture6/youtube_backend/Lecture 11.md",
     "backend-nodeJS/Lecture6/readme(lecture 7).md",
-    "backend-nodeJS/readme.md",
     "backend-nodeJS/Lecture3/readme.md",
     "backend-nodeJS/Lecture3/readme2.md",
     "backend-nodeJS/Lecture2/readme.md",
