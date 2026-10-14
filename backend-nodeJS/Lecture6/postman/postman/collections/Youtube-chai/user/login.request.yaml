@@ -1,0 +1,42 @@
+$kind: http-request
+description: ""
+url: "{{youtube-chai}}/user/login"
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+body:
+  type: formdata
+  content:
+    - type: text
+      key: fullName
+      value: Aditya Kumar Pandey
+      description: ""
+      disabled: true
+    - type: text
+      key: username
+      value: aditya.vibes07
+      description: ""
+      disabled: false
+    - type: text
+      key: email
+      value: aditya@gmail.com
+      description: ""
+      disabled: true
+    - type: text
+      key: password
+      value: Ballia@1234
+      description: ""
+      disabled: false
+    - type: file
+      key: avatar
+      src:
+        - /C:/Users/adity/pictures/blueprint.png
+      description: ""
+      disabled: true
+    - type: file
+      key: coverImage
+      src:
+        - /C:/Users/adity/pictures/favicon.png
+      description: ""
+      disabled: true
+order: 2000

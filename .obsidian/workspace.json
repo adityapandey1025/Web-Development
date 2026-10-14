@@ -168,17 +168,19 @@
   },
   "active": "1e1f509cc8f9c408",
   "lastOpenFiles": [
+    "backend-nodeJS/Lecture6/postman/postman/collections/Youtube-chai/user/refresh-token.request.yaml",
+    "backend-nodeJS/Lecture6/postman/postman/collections/Youtube-chai/user/logout.request.yaml",
+    "backend-nodeJS/Lecture6/postman/postman/collections/Youtube-chai/user/login.request.yaml",
+    "backend-nodeJS/Lecture6/youtube_backend/public/temp/favicon.png",
+    "backend-nodeJS/Lecture6/youtube_backend/public/temp/blueprint.png",
+    "backend-nodeJS/Lecture6/youtube_backend/src/middlewares/auth.middlewares.js",
+    "backend-nodeJS/Lecture6/youtube_backend/src/controllers/login.controllers.js",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/bcrypt.js",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/package.json",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples/forever_gen_salt.js",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples/async_compare.js",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/linux-arm64/bcrypt.musl.node",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/win32-arm64/bcrypt.node",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/linux-arm64/bcrypt.glibc.node",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/linux-x64/bcrypt.glibc.node",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/win32-x64/bcrypt.node",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/prebuilds/linux-x64/bcrypt.musl.node",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/tools/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/LICENSE.md",
@@ -211,8 +213,6 @@
     "Images/Pasted image 20261004215656.png",
     "Images/Pasted image 20261003163823.png",
     "Images/Pasted image 20261003163809.png",
-    "Images/Pasted image 20261003163749.png",
-    "Images/Pasted image 20261001100716.png",
-    "Images/Pasted image 20261001100652.png"
+    "Images/Pasted image 20261003163749.png"
   ]
 }

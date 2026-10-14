@@ -1,0 +1,14 @@
+$kind: http-request
+description: ""
+url: "{{youtube-chai}}/user/logout"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"password\":\"Ballia@1234\",\r
+
+    \    \"email\":\"aditya@gmail.com\"\r
+
+    }"
+order: 3000
