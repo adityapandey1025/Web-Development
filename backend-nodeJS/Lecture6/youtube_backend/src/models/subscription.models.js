@@ -3,18 +3,18 @@ import {User} from './user.models'
 
 const subscriptionSchema=new Schema(
     {
-        subscriber : [
+        subscriber : 
             {
                 type:Schema.Types.ObjectId,
                 ref:"User"
             }
-        ],
-        channel : [
+        ,
+        channel : 
             {
                 type:Schema.Types.ObjectId,
                 ref:"User"
             }
-        ],
+        ,
     },
     {
         timestamps:true

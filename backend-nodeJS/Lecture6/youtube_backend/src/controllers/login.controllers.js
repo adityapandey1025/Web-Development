@@ -19,7 +19,7 @@ const generateAccessAndRefreshToken=async(userId)=>{
 
         return {accessToken,refreshToken};
     } catch (error) {
-        throw new ApiErrors("Something went wrong while creating access and refresh Token");
+        throw new ApiErrors(500,"Something went wrong while creating access and refresh Token");
     }
 }
 
@@ -118,7 +118,7 @@ const loggedOutUser=asyncHandler(async (req,res)=>{
 })
 
 const refreshAccessToken=asyncHandler(async (req,res)=>{
-    const incomingRefreshToken=req.cookie?.refreshToken || req.body?.refreshToken;
+    const incomingRefreshToken=req.cookies?.refreshToken || req.body?.refreshToken;
 
     if(!incomingRefreshToken){
         throw new ApiErrors(401,"Unauthorised request");
@@ -146,7 +146,7 @@ const refreshAccessToken=asyncHandler(async (req,res)=>{
             secure:true
         }
     
-        const {newRefreshToken,accessToken}=await generateAccessAndRefreshToken(user._id);
+        const {refreshToken: newRefreshToken,accessToken}=await generateAccessAndRefreshToken(user._id);
     
         const loggedInUser=await User.findById(user._id);
     
@@ -180,7 +180,7 @@ const changePassword=asyncHandler(async (req,res)=>{
     const isCororectPassword=await user.isPasswordCorrect(oldPassword);
 
     if(!isCororectPassword){
-        return new ApiErrors(400,"Invalid Password");
+        throw new ApiErrors(400,"Invalid Password");
     }
 
     user.password=newPassword;
@@ -209,11 +209,11 @@ const getCurrentUser=asyncHandler(async (req,res)=>{
 const updateAccountDetails=asyncHandler(async (req,res)=>{
     const {fullName,email}=req.body;
 
-    if(! username || !email){
+    if(! fullName || !email){
         return new ApiErrors(400,"All fields are required");
     }
 
-    const user=User.findByIdAndUpdate(
+    const user=await User.findByIdAndUpdate(
         req.user._id,
         {
             $set : {
@@ -224,7 +224,7 @@ const updateAccountDetails=asyncHandler(async (req,res)=>{
         {
             new : true
         }
-    ).select("-password")
+    ).select("-password -refreshToken")
 
 
     return res
