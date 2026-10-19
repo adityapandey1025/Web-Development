@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b279a1407f5ded8f",
+        "id": "a3fdc721c536ab9c",
         "type": "tabs",
         "children": [
           {
-            "id": "32662b0821884089",
+            "id": "0e474be1653f097d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "database/mongodb/MongoDB Aggregation pipelines.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "MongoDB Aggregation pipelines"
+              "title": "New tab"
             }
           }
         ]
@@ -170,26 +166,32 @@
       "bases:Create new base": false
     }
   },
-  "active": "32662b0821884089",
+  "active": "0e474be1653f097d",
   "lastOpenFiles": [
+    "database/mongodb/One shot aggregation.md",
+    "database/mongodb/part 4.md",
+    "database/Untitled.md",
+    "database/mongodb/part 3.md",
+    "database/mongodb/part4.mongodb.js",
     "database/mongodb/MongoDB Aggregation pipelines.md",
-    "database/mongodb",
+    "database/mongodb/Part 2.md",
+    "database/mongodb/join.mongodb.js",
+    "database/mongodb/customerInsert.mongodb.js",
+    "database/mongodb/aggregation2.mongodb.js",
+    "database/Database.md",
+    "database/mongodb/group.mongodb.js",
+    "database/mongodb/group.mongodb,js",
+    "database/mongodb/inspect.mongodb.js",
+    "database/mongodb/insertMongoDBDocs.mongodb.js",
+    "database/mongodb/aggregation.mongodb.js",
+    "database/mongodb/playground-3.mongodb.js",
     "backend-nodeJS/Lecture6/youtube_backend/Lecture 19.md",
     "backend-nodeJS/Lecture6/readme(lecture 7).md",
     "backend-nodeJS/Lecture6/readme.md",
     "backend-nodeJS/Lecture6/youtube_backend/Lecture 10.md",
     "backend-nodeJS/readme.md",
-    "backend-nodeJS/Lecture6/postman/postman/collections/Youtube-chai/user/refresh-token.request.yaml",
-    "backend-nodeJS/Lecture6/postman/postman/collections/Youtube-chai/user/logout.request.yaml",
-    "backend-nodeJS/Lecture6/postman/postman/collections/Youtube-chai/user/login.request.yaml",
     "backend-nodeJS/Lecture6/youtube_backend/public/temp/favicon.png",
     "backend-nodeJS/Lecture6/youtube_backend/public/temp/blueprint.png",
-    "backend-nodeJS/Lecture6/youtube_backend/src/middlewares/auth.middlewares.js",
-    "backend-nodeJS/Lecture6/youtube_backend/src/controllers/login.controllers.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/bcrypt.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/package.json",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples/forever_gen_salt.js",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/bcrypt/examples/async_compare.js",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/tools/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/node-addon-api/LICENSE.md",
@@ -204,12 +206,6 @@
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/use-structured-metadata.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/upload-large-video.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/upload-image.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/sign-browser-upload.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/transform-and-deliver-video.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/troubleshoot-errors.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/transform-and-deliver-image.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/search-and-manage-assets.md",
-    "backend-nodeJS/Lecture6/youtube_backend/node_modules/cloudinary/docs/README.md",
     "backend-nodeJS/Lecture6/youtube_backend/node_modules/mongoose-aggregate-paginate-v2/static/banner.jpg",
     "Images/Pasted image 20261006174629.png",
     "Images/Pasted image 20261006112929.png",
